@@ -1,4 +1,6 @@
 # Chaudhary_harsh_chaudhari_vasishth_music_mixer
+![pexels-vishnu-r-nair-1105666](https://github.com/Harssh07/Chaudhary_harsh_chaudhari_vasishth_music_mixer/assets/121983623/91dc6d19-b8e7-4e90-b8e3-08adc0adb3a2)
+
 ## hello and good day to all!
 ### we are going to make website which will have drag and drop function.
 #### 1. User Interface:
@@ -17,3 +19,4 @@ Allow users to play, pause, stop, and preview their mixed composition in real-ti
 Implement a feature that allows users to save their mixed compositions for future editing or export them as downloadable audio files. Offer various output formats, such as MP3, WAV, or OGG, with customizable quality settings.
 #### 6.Additional Features:
 Consider adding a library of pre-existing audio samples, loops, and effects that users can drag and drop onto the mixing board.Implement collaboration features, allowing multiple users to work on the same composition simultaneously or share their projects with others.
+

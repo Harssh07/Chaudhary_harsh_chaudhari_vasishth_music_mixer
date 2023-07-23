@@ -1,5 +1,6 @@
 # Chaudhary_harsh_chaudhari_vasishth_music_mixer
-![Indian-music-instuments](https://github.com/Harssh07/Chaudhary_harsh_chaudhari_vasishth_music_mixer/assets/121983623/04f41b10-12f2-46a7-b388-924daf75664c)
+![music_theme](https://github.com/Harssh07/Chaudhary_harsh_chaudhari_vasishth_music_mixer/assets/121983623/89d24abb-32f6-47a8-8332-b675930f7c50)
+
 
 
 ## hello and good day to all!

@@ -1,5 +1,6 @@
 # Chaudhary_harsh_chaudhari_vasishth_music_mixer
-![pexels-vishnu-r-nair-1105666](https://github.com/Harssh07/Chaudhary_harsh_chaudhari_vasishth_music_mixer/assets/121983623/91dc6d19-b8e7-4e90-b8e3-08adc0adb3a2)
+![Indian-music-instuments](https://github.com/Harssh07/Chaudhary_harsh_chaudhari_vasishth_music_mixer/assets/121983623/04f41b10-12f2-46a7-b388-924daf75664c)
+
 
 ## hello and good day to all!
 ### we are going to make music webpage, which will have drag and drop function.

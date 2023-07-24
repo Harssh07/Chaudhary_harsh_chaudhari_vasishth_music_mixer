@@ -1,44 +1,49 @@
-console.log('Js file connected')
-document.addEventListener("DOMContentLoaded", () => {
-    const draggableIcon = document.getElementById("draggable-icon");
-    const dropBox = document.querySelector(".drop-box");
-  
-    // Event listener for when the draggable icon is being dragged
-    draggableIcon.addEventListener("dragstart", (event) => {
-      event.dataTransfer.setData("text/plain", event.target.id);
+const icons = document.querySelectorAll('.icon');
+const boxes = document.querySelectorAll('.box');
+const audios = document.querySelectorAll('audio');
+
+let activeIcon = null;
+
+icons.forEach((icon) => {
+  icon.addEventListener('dragstart', dragStart);
+});
+
+boxes.forEach((box) => {
+  box.addEventListener('dragover', dragOver);
+  box.addEventListener('drop', drop);
+});
+
+function dragStart(e) {
+  activeIcon = e.target;
+}
+
+function dragOver(e) {
+  e.preventDefault();
+}
+
+function drop(e) {
+  e.preventDefault();
+
+  if (!e.target.classList.contains('icon') && e.target.children.length === 0) {
+    e.target.appendChild(activeIcon);
+
+    // Play the corresponding audio when dropped
+    const audioId = activeIcon.id.replace('icon', 'audio');
+    const audio = document.getElementById(audioId);
+    audio.currentTime = 0;
+    audio.play();
+  }
+}
+
+// Play all audios when all icons are dropped
+document.addEventListener('dragend', () => {
+  const iconCount = document.querySelectorAll('.icon').length;
+  const boxesWithIcons = document.querySelectorAll('.box .icon').length;
+
+  if (iconCount === boxesWithIcons) {
+    audios.forEach((audio) => {
+      audio.currentTime = 0;
+      audio.play();
     });
-  
-    // Event listener for when the draggable icon is being dropped
-    dropBox.addEventListener("drop", (event) => {
-      event.preventDefault();
-      const audioFileId = event.dataTransfer.getData("text");
-  
-      // Check if the dropped item is the draggable icon
-      if (audioFileId === "draggable-icon") {
-        // Create a clone of the draggable icon and set its attributes
-        const clonedIcon = draggableIcon.cloneNode(true);
-        clonedIcon.setAttribute("draggable", "false");
-  
-        // Create an Audio element and set its source to your audio file
-        const audio = new Audio("./assets/ooze-92elm-main-version-03-19-3272.mp3");
-        audio.controls = true;
-  
-        // Clear the drop box content (if any) and append the cloned icon and audio element
-        dropBox.innerHTML = '';
-        dropBox.appendChild(clonedIcon);
-        dropBox.appendChild(audio);
-  
-        // Detach the original icon from its parent (but do not remove the entire parent)
-        draggableIcon.parentNode.removeChild(draggableIcon);
-  
-        // Play the audio file
-        audio.play();
-      }
-    });
-  
-    // Prevent default behavior to allow dropping
-    dropBox.addEventListener("dragover", (event) => {
-      event.preventDefault();
-    });
-  });
-  
+  }
+});

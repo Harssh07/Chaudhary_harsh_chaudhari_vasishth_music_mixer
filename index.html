@@ -9,44 +9,25 @@
     <title>Music mixer</title>
 </head>
 <body>
-    <h1>Music mixer</h1>
-   
-    
-    
-    <body>
-        <div class="icon-container">
-          <img id="draggable-icon" src="./img/drum.png.jpg" draggable="true">
-        </div>
-        <div class="drop-box"></div>
-        <div class="audio-player">
-          <!-- Your audio player bar goes here -->
-        </div>
-    <footer>
-        <p>&copy; 2023 Music Website. All rights reserved.</p>
-  </footer>
+  <div class="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+  </div>
 
+  <div class="icons">
+    <div class="icon" id="icon1" draggable="true"></div>
+    <div class="icon" id="icon2" draggable="true"></div>
+    <div class="icon" id="icon3" draggable="true"></div>
+    <div class="icon" id="icon4" draggable="true"></div>
+  </div>
 
-    <!-- Dev note -->
-
-
- <!-- NOTE: We have already collected high-quality hip-hop music samples for five beats.
-
- TODO: Design a user interface (UI) for beat selection and drag-and-drop.
-Our goal is to create an intuitive interface where users can select beats and easily drag them onto specific places.
-
-TODO: Implement drag-and-drop functionality.
- We will enable users to drag the selected beats and drop them onto designated areas for seamless interaction.
-
-TODO: Develop playback functionality.
- Once a beat is dropped onto a specific area, it will trigger the playback of the corresponding music sample.
-
- TODO: Test and refine the user experience (UX).
-We will rigorously test the drag-and-drop interaction and ensure accurate beat playback for a smooth user experience. -->
-
-
-
-
-
+  <audio id="audio1" src="./assets/808-kick-boom-bass-snare-hit-hats-roll-140-bpm-3-trap-loop-15-12764.mp3"></audio>
+  <audio id="audio2" src="./assets/gotcha-mountaineer-main-version-02-09-17987.mp3"></audio>
+  <audio id="audio3" src="./assets/old-school-hip-hop-drumloop-105bpm-125946.mp3"></audio>
+  <audio id="audio4" src="./assets/typical-trap-loop-140bpm-129880.mp3"></audio>
+ 
     <script src="./js/main.js"></script>
 </body>
 </html>

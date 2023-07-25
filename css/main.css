@@ -6,6 +6,27 @@ body {
   margin-top: 50px;
 }
 
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: darkgray;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  width: 100%; /* Set the image width to 100% of the icon width */
+  height: 100%; /* Set the image height to 100% of the icon height */
+  object-fit: cover; /* Maintain the aspect ratio and cover the icon */
+}
+
 .container {
   display: flex;
 }
@@ -15,19 +36,13 @@ body {
   height: 100px;
   background-color: lightgray;
   margin: 10px;
-}
-
-.icons {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.icon {
-  width: 50px;
-  height: 50px;
-  background-color: darkgray;
-  margin: 5px;
-}
-
-.audio-playing {
-  border: 2px solid red;
+.box img {
+  width: 100%; /* Set the image width to 100% of the box width */
+  height: 100%; /* Set the image height to 100% of the box height */
+  object-fit: cover; /* Maintain the aspect ratio and cover the box */
 }

@@ -1,49 +1,72 @@
 const icons = document.querySelectorAll('.icon');
 const boxes = document.querySelectorAll('.box');
 const audios = document.querySelectorAll('audio');
+const resetButton = document.getElementById('resetButton');
 
 let activeIcon = null;
+let originalParent = null;
+let occupiedBoxes = [false, false, false, false];
 
 icons.forEach((icon) => {
   icon.addEventListener('dragstart', dragStart);
 });
 
-boxes.forEach((box) => {
+boxes.forEach((box, index) => {
   box.addEventListener('dragover', dragOver);
-  box.addEventListener('drop', drop);
+  box.addEventListener('drop', (e) => drop(e, index));
 });
 
+resetButton.addEventListener('click', resetIcons);
+
 function dragStart(e) {
-  activeIcon = e.target;
+  activeIcon = e.currentTarget; // Use currentTarget to select the whole .icon element
+  originalParent = e.currentTarget.parentElement; // Store the original parent
 }
 
 function dragOver(e) {
   e.preventDefault();
 }
 
-function drop(e) {
+function drop(e, index) {
   e.preventDefault();
 
-  if (!e.target.classList.contains('icon') && e.target.children.length === 0) {
-    e.target.appendChild(activeIcon);
+  if (!e.target.classList.contains('icon') && !occupiedBoxes[index]) {
+    const box = e.target;
 
-    // Play the corresponding audio when dropped
-    const audioId = activeIcon.id.replace('icon', 'audio');
-    const audio = document.getElementById(audioId);
-    audio.currentTime = 0;
-    audio.play();
+    // Check if the icon is not already in a box
+    if (!activeIcon.parentElement.classList.contains('box')) {
+      // Append the dragged icon to the box
+      box.appendChild(activeIcon);
+      occupiedBoxes[index] = true;
+
+      // Resize the dropped icon to fit the box dimensions
+      activeIcon.style.width = '100%';
+      activeIcon.style.height = '100%';
+
+      // Play the corresponding audio when dropped
+      const audioId = activeIcon.id.replace('icon', 'audio');
+      const audio = document.getElementById(audioId);
+      audio.currentTime = 0;
+      audio.play();
+    }
   }
 }
 
-// Play all audios when all icons are dropped
-document.addEventListener('dragend', () => {
-  const iconCount = document.querySelectorAll('.icon').length;
-  const boxesWithIcons = document.querySelectorAll('.box .icon').length;
+function resetIcons() {
+  icons.forEach((icon) => {
+    const originalBox = originalParent;
+    originalBox.appendChild(icon);
 
-  if (iconCount === boxesWithIcons) {
-    audios.forEach((audio) => {
-      audio.currentTime = 0;
-      audio.play();
-    });
-  }
-});
+    // Reset icon size to original dimensions
+    icon.style.width = '50px';
+    icon.style.height = '50px';
+  });
+
+  occupiedBoxes = [false, false, false, false]; // Reset the occupied boxes
+
+  // Pause and reset all audio
+  audios.forEach((audio) => {
+    audio.pause();
+    audio.currentTime = 0;
+  });
+}

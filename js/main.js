@@ -70,3 +70,27 @@ function resetIcons() {
     audio.currentTime = 0;
   });
 }
+
+
+const pauseButton = document.getElementById('pauseButton');
+let isPlaying = true; // Track if audio is currently playing or paused
+
+pauseButton.addEventListener('click', toggleAudio);
+
+function toggleAudio() {
+  if (isPlaying) {
+    // Pause all audio when the pause button is clicked
+    audios.forEach((audio) => {
+      audio.pause();
+    });
+    pauseButton.textContent = 'Resume'; // Change button text to "Resume"
+  } else {
+    // Resume playing audio when the pause button is clicked again
+    audios.forEach((audio) => {
+      audio.play();
+    });
+    pauseButton.textContent = 'Pause'; // Change button text back to "Pause"
+  }
+
+  isPlaying = !isPlaying; // Toggle the isPlaying flag
+}

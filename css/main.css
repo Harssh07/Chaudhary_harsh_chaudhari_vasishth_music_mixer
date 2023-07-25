@@ -86,3 +86,6 @@ height: 50px;
   height: 100%; /* Set the image height to 100% of the box height */
   object-fit: cover; /* Maintain the aspect ratio and cover the box */
 }
+.dpzone{
+  margin-top: 35px;
+}

@@ -1,6 +1,10 @@
 # Chaudhary_harsh_chaudhari_vasishth_music_mixer
+![music_theme](https://github.com/Harssh07/Chaudhary_harsh_chaudhari_vasishth_music_mixer/assets/121983623/89d24abb-32f6-47a8-8332-b675930f7c50)
+
+
+
 ## hello and good day to all!
-### we are going to make website which will have drag and drop function.
+### we are going to make music webpage, which will have drag and drop function.
 #### 1. User Interface:
 The website should have a clean and intuitive user interface (UI) that allows users to easily navigate and interact with the different features.
 The website should have a clean and intuitive user interface (UI) that allows users to easily navigate and interact with the different features. The main area of the UI should consist of a virtual mixing board, resembling a physical mixer, where users can place and manipulate audio tracks. The UI should include drag and drop zones or sections where users can drop their music files to add them to the mixing board.Provide a control panel or sidebar that houses various controls and options for mixing and editing the tracks.
@@ -17,3 +21,4 @@ Allow users to play, pause, stop, and preview their mixed composition in real-ti
 Implement a feature that allows users to save their mixed compositions for future editing or export them as downloadable audio files. Offer various output formats, such as MP3, WAV, or OGG, with customizable quality settings.
 #### 6.Additional Features:
 Consider adding a library of pre-existing audio samples, loops, and effects that users can drag and drop onto the mixing board.Implement collaboration features, allowing multiple users to work on the same composition simultaneously or share their projects with others.
+

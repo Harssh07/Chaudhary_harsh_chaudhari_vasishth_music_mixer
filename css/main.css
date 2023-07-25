@@ -51,12 +51,3 @@ body {
   height: 100%; /* Set the image height to 100% of the box height */
   object-fit: cover; /* Maintain the aspect ratio and cover the box */
 }
-/* ... your existing CSS styles ... */
-
-/* #pauseButton {
-  margin: 10px;
-} */
-
-.buttons #resetButton{
-margin-left: 10px;
-}

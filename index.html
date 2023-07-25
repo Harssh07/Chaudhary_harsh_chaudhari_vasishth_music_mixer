@@ -6,45 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Kanit:wght@600&display=swap" rel="stylesheet">
     <title>Music mixer</title>
 </head>
 <body>
-  <h1>Music Mixer</h1>
-  <div class="icons">
-    <div class="icon" id="icon1" draggable="true">
-      <img src="./img/background image.jpg" alt="Image 1">
-    </div>
-    <div class="icon" id="icon2" draggable="true">
-      <img src="./img/drum.png.jpg" alt="Image 2">
-    </div>
-    <div class="icon" id="icon3" draggable="true">
-      <img src="." alt="Image 3">
-    </div>
-    <div class="icon" id="icon4" draggable="true">
-      <img src="image4.jpg" alt="Image 4">
-    </div>
-    <div class="icon" id="icon5" draggable="true">
-      <img src="./img/icon5.jpg" alt="Image 5">
-    </div>
-    <div class="icon" id="icon6" draggable="true">
-      <img src="./img/icon6.jpg" alt="Image 6">
-    </div>
+  <div class="grid-con">
+
+    <h1 class="col-span-4 m-col-span-12 l-col-span-12 top">Music Mixer</h1>
   </div>
 
-  
-  <div class="container">
-    <div class="box" id="box1"></div>
-    <div class="box" id="box2"></div>
-    <div class="box" id="box3"></div>
-    <div class="box" id="box4"></div>
+
+    <div class="icons">
+      <div class="grid-con ">
+      <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon1" draggable="true">
+        <img src="./img/background image.jpg" alt="Image 1">
+        <audio id="audio1" src="./assets/808-kick-boom-bass-snare-hit-hats-roll-140-bpm-3-trap-loop-15-12764.mp3"></audio>
+      </div>
+      <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon2" draggable="true">
+        <audio id="audio2" src="./assets/gotcha-mountaineer-main-version-02-09-17987.mp3"></audio>
+        <img src="./img/drum.png.jpg" alt="Image 2">
+      </div>
+      <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon3" draggable="true">
+      <audio id="audio3" src="./assets/old-school-hip-hop-drumloop-105bpm-125946.mp3"></audio>
+      <img src="." alt="Image 3">
+    </div>
+    <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon4" draggable="true">
+      <audio id="audio4" src="./assets/typical-trap-loop-140bpm-129880.mp3"></audio>  
+      <img src="image4.jpg" alt="Image 4">
+    </div>
+    <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon5" draggable="true">
+      <img src="./img/icon5.jpg" alt="Image 5">
+      <audio id="audio5" src="./assets/grunge-bounce-drum-loop-40464.mp3"></audio>
+    </div>
+    <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon6" draggable="true">
+      <img src="./img/icon6.jpg" alt="Image 6">
+      <audio id="audio6" src="./assets/old-school-hip-hop-drumloop-105bpm-125946 (1).mp3"></audio>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="container ">
+    <div class="grid-con">
+    <div class="col-span-2 m-col-span-3 l-col-span-3  box" id="box1">
+      
+    </div>
+    <div class="col-span-2 m-col-span-3 l-col-span-3 box" id="box2"></div>
+    <div class="col-span-2 m-col-span-3 l-col-span-3 box" id="box3"></div>
+    <div class="col-span-2 m-col-span-3 l-col-span-3 box" id="box4"></div>
+    </div>
   </div>
   
-  <audio id="audio1" src="./assets/808-kick-boom-bass-snare-hit-hats-roll-140-bpm-3-trap-loop-15-12764.mp3"></audio>
-  <audio id="audio2" src="./assets/gotcha-mountaineer-main-version-02-09-17987.mp3"></audio>
-  <audio id="audio3" src="./assets/old-school-hip-hop-drumloop-105bpm-125946.mp3"></audio>
-  <audio id="audio4" src="./assets/typical-trap-loop-140bpm-129880.mp3"></audio>  
-  <audio id="audio5" src="./assets/grunge-bounce-drum-loop-40464.mp3"></audio>
-  <audio id="audio6" src="./assets/old-school-hip-hop-drumloop-105bpm-125946 (1).mp3"></audio>
   
   
 
@@ -55,6 +70,26 @@
   <button id="pauseButton">Pause</button>
 </div>
  
+<div class="grid-con">
+  <h2 class="col-span-4 m-col-span-12 l-col-start-4 l-col-end-10 boxes">How to use</h2>
+<p class="col-span-4 m-col-span-6 l-col-span-6 boxes">Step 1: Access the Music Mixer
+
+  Open the website hosting the Music Mixer application.
+  You will see the Music Mixer interface with icons and empty containers.</p>
+  <p class="col-span-4 m-col-span-6 l-col-span-6 boxes">Step 2: Mix Audio Elements
+
+    Drag an icon from the icons section.
+    Drop the icon into one of the empty containers.</p>
+    <p class="col-span-4 m-col-span-6 l-col-span-6 boxes">Step 3: Play the Audio Mix
+
+      Click on a container with an icon inside.
+      The audio for that track will start playing.</p>
+      <p class="col-span-4 m-col-span-6 l-col-span-6 boxes">Step 4: Reset and Pause
+
+        Click the "Reset" button to remove all icons from the containers.
+        Click the "Pause" button to pause the audio playback, click again to resume.</p>
+      </div>
+
     <script src="./js/main.js"></script>
 </body>
 </html>

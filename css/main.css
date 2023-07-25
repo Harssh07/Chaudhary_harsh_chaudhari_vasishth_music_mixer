@@ -1,14 +1,39 @@
 body {
   display: flex;
-  background-image: url(../img/background\ image.jpg);
+  background-image: url(../img/background01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
+  background-position: center;
   align-items: center;
   font-family: Arial, sans-serif;
   margin-top: 50px;
 }
-
+.top{
+color: white;
+font-size: 60px;
+font-family: 'Borel', cursive;
+font-family: 'Kanit', sans-serif;
+}
+.top:hover{
+  color: red;
+}
+#resetButton{
+  border-radius: 8px;
+  width: 70px;
+  height: 40px;
+}
+#resetButton:hover{
+  background-color: orangered;
+}
+#pauseButton{
+  border-radius: 8px;
+  width: 70px;
+  height: 40px;
+}
+#pauseButton:hover{
+  background-color: orangered;
+}
 .icons {
   display: flex;
   justify-content: center;
@@ -35,12 +60,22 @@ body {
 }
 
 .box {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   background-color: lightgray;
   margin: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 8px;
+}
+.boxes{
+  height: fit-content;
+  background-color: rgb(192, 191, 189);
+  display: flex;
+  text-align: center;
+height: 50px;
   justify-content: center;
   border-radius: 8px;
   padding: 8px;

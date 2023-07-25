@@ -9,73 +9,60 @@
     <title>Music mixer</title>
 </head>
 <body>
-    
-  <div class="icons grid-con">
-    <div class="icon col-span-1 m-col-span-12 l-col-span-8 xl-col-span-3 box " id="icon1" draggable="true">
-      <img src="./img/drum.jpg" alt="Image 1">
-    </div>
-    <div class="icon col-start-1 col-end-1 m-col-span-12 l-col-span-10 xl-col-span-9 box" id="icon2" draggable="true">
-      <img src="./img/beats.jpg" alt="Image 2">
-    </div>
-    <div class="icon col-span-1 m-col-span-12 l-col-span-12 xl-col-span-12 box" id="icon3" draggable="true">
+  <div class="grid-con">
+
+    <h1 class="icon col-span-4 l-col-start-4 l-col-end-8 m-col-start-4 m-col-end-8 xl-col-span-12 box">Music Mixer</h1>
+  </div>
+  
+  <div class="grid-con"></div>
+    <div class="icons grid-con ">
+      <div class="icon col-span-1 l-col-start-1 l-col-end-12  m-col-start-4 m-col-end-8 xl-col-span-12 box" id="icon1" draggable="true">
+        <img src="./img/beats.jpg" alt="Image 1">
+      </div>
+      <div class="icon col-span-1 l-col-start-1 l-col-end-12 m-col-start-4 m-col-end-8 xl-col-span-12 box" id="icon2" draggable="true">
+        <img src="./img/drum.jpg" alt="Image 2">
+      </div>
+    <div class="icon col-span-1 l-col-start-1 l-col-end-12 m-col-start-4 m-col-end-8 xl-col-span-12 box" id="icon3" draggable="true">
       <img src="./img/guitar.jpg" alt="Image 3">
     </div>
-    <div class="icon col-span-1 m-col-span-12 l-col-span-6 xl-col-span-3 box" id="icon4" draggable="true">
+    <div class="icon col-span-1 l-col-start-1 l-col-end-12 m-col-start-4 m-col-end-8 xl-col-span-12 box" id="icon4" draggable="true">
       <img src="./img/music.jpg" alt="Image 4">
     </div>
+    <div class="icon col-span-1 l-col-start-1 l-col-end-12 m-col-start-4 m-col-end-8 xl-col-span-12 box" id="icon5" draggable="true">
+      <img src="./img/beats.jpg" alt="Image 5">
+    </div>
+    <div class="icon col-span-1 l-col-start-1 l-col-end-12 m-col-start-4 m-col-end-8 xl-col-span-12 box" id="icon6" draggable="true">
+      <img src="./img/beats.jpg" alt="Image 6">
+    </div>
   </div>
+</div>
 
-  <button id="resetButton">Reset</button>
+
+  <div class="grid-con">
   <div class="container grid-con">
-    <div class="box col-span-2 m-col-span-6 l-col-span-6 xl-col-span-3 box" id="box1"></div>
-    <div class="box col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box" id="box2"></div>
-    <div class="box col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box" id="box3"></div>
-    <div class="box col-span-2 m-col-span-4 l-col-span-3 xl-col-span-6 box" id="box4"></div>
+    <div class="box col-span-2 l-col-start-1 l-col-end-12 m-col-start-1 m-col-end-12 xl-col-span-12 box" id="box1"></div>
+    <div class="box col-span-2 l-col-start-1 l-col-end-12 m-col-start-1 m-col-end-12 xl-col-span-12 box" id="box2"></div>
+    <div class="box col-span-2 l-col-start-1 l-col-end-12 m-col-start-1 m-col-end-12 xl-col-span-12 box" id="box3"></div>
+    <div class="box col-span-2 l-col-start-1 l-col-end-12 m-col-start-1 m-col-end-12 xl-col-span-12 box" id="box4"></div>
   </div>
+  </div>
+  
+  <audio id="audio1" src="./assets/808-kick-boom-bass-snare-hit-hats-roll-140-bpm-3-trap-loop-15-12764.mp3"></audio>
+  <audio id="audio2" src="./assets/gotcha-mountaineer-main-version-02-09-17987.mp3"></audio>
+  <audio id="audio3" src="./assets/old-school-hip-hop-drumloop-105bpm-125946.mp3"></audio>
+  <audio id="audio4" src="./assets/typical-trap-loop-140bpm-129880.mp3"></audio>  
+  <audio id="audio5" src="./assets/grunge-bounce-drum-loop-40464.mp3"></audio>
+  <audio id="audio6" src="./assets/old-school-hip-hop-drumloop-105bpm-125946 (1).mp3"></audio>
+  
+  
 
-  <audio id="audio1" src="./assets/floating-abstract-142819.mp3"></audio>
-  <audio id="audio2" src="./assets/futuristic-beat-146661.mp3"></audio>
-  <audio id="audio3" src="./assets/jazz-and-hop-kidcut-main-version-02-09-12098.mp3"></audio>
-  <audio id="audio4" src="./assets/refresh-mountaineer-main-version-01-53-19379.mp3"></audio>
   
-  <!-- <section class="spacer">
-    <h2>Combined classes using media queries</h2>
-    <header class="grid-con">
-        <div class="col-span-3 m-col-span-2 l-col-span-2 xl-col-span-3 box">Logo</div>
-        <nav class="col-start-4 col-end-5 m-col-span-10 l-col-span-10 xl-col-span-9 box">
-            <h2 class="hidden">Main Mobile Nav</h2>
-            <p>Nav</p>
-        </nav>
-    </header>
-    <section class="grid-con">
-        <h2 class="hidden">Hero Image</h2>
-        <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
-            <p>Hero Image</p>
-        </div>
-    </section>
-    <section class="grid-con">
-        <h2 class="hidden">Product Section</h2>
-        <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-3 box"><p>Product 1</p></div>
-        <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-3 box"><p>Product 2</p></div>
-        
-    </section> 
-    <section class="grid-con">
-        <h2 class="hidden">Service Desc</h2>
-        <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box">Service 1</div>
-        <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box">Service 2</div>
-        <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-6 box">Service 3</div> 
-        <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-6 box">Service 4</div>
-        <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-2 box">Service 5</div>
-        <div class="col-span-2 m-col-span-4 l-col-span-6 xl-col-span-2 box image">image</div>
-        <div class="col-span-2 m-col-span-4 l-col-span-3 xl-col-span-3 box">Service 6</div>
-    </section>
-    <footer class="grid-con">
-        <h2 class="hidden">You made it to the end</h2>
-        <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-7 box">Footer</div>
-    </footer>
-</section>-->
   
+  <div class="buttons">
+  <button id="resetButton">Reset</button>
+  <button id="pauseButton">Pause</button>
+</div>
  
     <script src="./js/main.js"></script>
 </body>
-</html>x
+</html>

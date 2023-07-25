@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Kanit:wght@600&display=swap" rel="stylesheet">
+
     <title>Music mixer</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+  <div class="grid-con">
+
+    <h1 class="col-span-4 m-col-span-12 l-col-span-12 top">Music Mixer</h1>
+  </div>
+
    <h1>Music mixer</h1>
     
     <main>
@@ -22,26 +38,77 @@
     </footer>
 
 
-    <!-- Dev note -->
 
+    <div class="icons">
+      <div class="grid-con ">
+      <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon1" draggable="true">
+        <img src="./img/synthesizer.png" alt="Image 1">
+        <audio id="audio1" src="./assets/808-kick-boom-bass-snare-hit-hats-roll-140-bpm-3-trap-loop-15-12764.mp3"></audio>
+      </div>
+      <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon2" draggable="true">
+        <audio id="audio2" src="./assets/gotcha-mountaineer-main-version-02-09-17987.mp3"></audio>
+        <img src="./img/french-horn.png" alt="Image 2">
+      </div>
+      <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon3" draggable="true">
+      <audio id="audio3" src="./assets/distance-tatami-main-version-02-04-18843.mp3"></audio>
+      <img src="./img/piano.png" alt="Image 3">
+    </div>
+    <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon4" draggable="true">
+      <audio id="audio4" src="./assets/typical-trap-loop-140bpm-129880.mp3"></audio>  
+      <img src="./img/drum-set.png" alt="Image 4">
+    </div>
+    <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon5" draggable="true">
+      <img src="./img/xylophone.png" alt="Image 5">
+      <audio id="audio5" src="./assets/grunge-bounce-drum-loop-40464.mp3"></audio>
+    </div>
+    <div class="icon col-span-2 m-col-span-4 l-col-span-4 box" id="icon6" draggable="true">
+      <img src="./img/drum.png" alt="Image 6">
+      <audio id="audio6" src="./assets/old-school-hip-hop-drumloop-105bpm-125946 (1).mp3"></audio>
+    </div>
+  </div>
+  </div>
 
- <!-- NOTE: We have already collected high-quality hip-hop music samples for five beats.
+<div class="grid-con">
+  <h2 class="col-span-4 m-col-span-12 l-col-start-4 l-col-end-10 boxes dpzone">Drop Zones</h2>
+</div>
+  <div class="container ">
+    <div class="grid-con">
+    <div class="col-span-2 m-col-span-3 l-col-span-3  box" id="box1"></div>
+    <div class="col-span-2 m-col-span-3 l-col-span-3 box" id="box2"></div>
+    <div class="col-span-2 m-col-span-3 l-col-span-3 box" id="box3"></div>
+    <div class="col-span-2 m-col-span-3 l-col-span-3 box" id="box4"></div>
+    </div>
+  </div>
+  
+  
+  
 
- TODO: Design a user interface (UI) for beat selection and drag-and-drop.
-Our goal is to create an intuitive interface where users can select beats and easily drag them onto specific places.
+  
+  
+  <div class="buttons">
+  <button id="resetButton">Reset</button>
+  <button id="pauseButton">Pause</button>
+</div>
+ 
+<div class="grid-con">
+  <h2 class="col-span-4 m-col-span-12 l-col-start-4 l-col-end-10 boxes">How to use</h2>
+<p class="col-span-4 m-col-span-6 l-col-span-6 boxes">Step 1: Access the Music Mixer
 
-TODO: Implement drag-and-drop functionality.
- We will enable users to drag the selected beats and drop them onto designated areas for seamless interaction.
+  Open the website hosting the Music Mixer application.
+  You will see the Music Mixer interface with icons and empty containers.</p>
+  <p class="col-span-4 m-col-span-6 l-col-span-6 boxes">Step 2: Mix Audio Elements
 
-TODO: Develop playback functionality.
- Once a beat is dropped onto a specific area, it will trigger the playback of the corresponding music sample.
+    Drag an icon from the icons section.
+    Drop the icon into one of the empty containers.</p>
+    <p class="col-span-4 m-col-span-6 l-col-span-6 boxes">Step 3: Play the Audio Mix
 
- TODO: Test and refine the user experience (UX).
-We will rigorously test the drag-and-drop interaction and ensure accurate beat playback for a smooth user experience. -->
+      Click on a container with an icon inside.
+      The audio for that track will start playing.</p>
+      <p class="col-span-4 m-col-span-6 l-col-span-6 boxes">Step 4: Reset and Pause
 
-
-
-
+        Click the "Reset" button to remove all icons from the containers.
+        Click the "Pause" button to pause the audio playback, click again to resume.</p>
+      </div>
 
 
   

@@ -1,54 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Music mixer</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-   <h1>Music mixer</h1>
     
-    <main>
-        <div class="container">
-            <h2>Drag and Drop Audio</h2>
-            <div class="dropzone" id="dropzone">
-                <p>Drag and drop your audio files here</p>
-            </div>
-        </div>
-    </main>
+  <div class="icons">
+    <div class="icon" id="icon1" draggable="true">
+      <img src="./images/Drum.png" alt="Image 1">
+    </div>
+    <div class="icon" id="icon2" draggable="true">
+      <img src="./images/guitar.png" alt="Image 2">
+    </div>
+    <div class="icon" id="icon3" draggable="true">
+      <img src="./images/music.png" alt="Image 3">
+    </div>
+    <div class="icon" id="icon4" draggable="true">
+      <img src="./images/sound.png" alt="Image 4">
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2023 Music Website. All rights reserved.</p>
+  <button id="resetButton">Reset</button>
 
-    </footer>
+  <div class="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+  </div>
 
-
-    <!-- Dev note -->
-
-
- <!-- NOTE: We have already collected high-quality hip-hop music samples for five beats.
-
- TODO: Design a user interface (UI) for beat selection and drag-and-drop.
-Our goal is to create an intuitive interface where users can select beats and easily drag them onto specific places.
-
-TODO: Implement drag-and-drop functionality.
- We will enable users to drag the selected beats and drop them onto designated areas for seamless interaction.
-
-TODO: Develop playback functionality.
- Once a beat is dropped onto a specific area, it will trigger the playback of the corresponding music sample.
-
- TODO: Test and refine the user experience (UX).
-We will rigorously test the drag-and-drop interaction and ensure accurate beat playback for a smooth user experience. -->
-
-
-
-
-
-
+  <audio id="audio1" src="./assets/floating-abstract-142819.mp3"></audio>
+  <audio id="audio2" src="./assets/futuristic-beat-146661.mp3"></audio>
+  <audio id="audio3" src="./assets/jazz-and-hop-kidcut-main-version-02-09-12098.mp3"></audio>
+  <audio id="audio4" src="./assets/refresh-mountaineer-main-version-01-53-19379.mp3"></audio>
   
-    <h1>Music mixer</h1>
-
-
+  
+ 
     <script src="./js/main.js"></script>
 </body>
-</html>
-
+</html>x
